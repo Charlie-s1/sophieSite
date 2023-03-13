@@ -115,9 +115,15 @@ section{
     height:100%;
     width:100%;
 }
-/* .sectionShadow:hover{
-    opacity:1;
-} */
+@media screen and (max-width:1000px){
+    main{
+        grid-template-columns: 1fr;
+        margin:0;
+    }
+    #navBar{
+        flex-direction: column;
+    }
+}
 @font-face{
     font-family: casino;
     src:url(fonts/Casino3D.ttf)
