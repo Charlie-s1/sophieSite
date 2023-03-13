@@ -1,0 +1,124 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: sans-serif;
+}
+#navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:fit-content;
+    margin:1rem;
+}
+#title{
+    font-family: casino;
+    font-size: 5rem;
+    text-decoration: none;
+    color:black;
+}
+#navBar nav{
+    font-family: sans-serif;
+    display:flex;
+}
+#navBar nav > *{
+    margin:0 .5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color:black;
+}
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 42vh;
+    gap: 1rem;
+    margin:0 2rem;
+    height:fit-content;
+    max-width:100vw;
+}
+main a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    height:90%;
+    width:90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 1px 5px #00000099;
+    transition: .1s;
+}
+section:hover{
+    box-shadow: 0 5px 20px 5px #00000044;
+}
+.fill{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.fill > img, .fill > video{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.cardHover{
+    width:100%;
+    height: 100%;
+    z-index: 999;
+    position: absolute;
+}
+section{
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.titleCont{
+    position: absolute;
+    color:black;
+    height:2rem;
+    top:90%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding:1rem;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background:#ffffff50;
+    box-shadow: 0 4pc 30px #00000010;
+    border:1px solid #ffffff40;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    transform: translate(0,-50%);
+}
+/* .sectionTitle{
+    position: absolute;
+    bottom:-5rem;
+    transition: .25s ease-out;
+} */
+.sectionShadow{
+    position: absolute;
+    transition: .25s;
+    opacity:0;
+    mask:linear-gradient(transparent 50%,#ffffff 100%);
+    background:linear-gradient(transparent 85%,#ffffff 100%);
+    backdrop-filter: blur(10px);
+    height:100%;
+    width:100%;
+}
+/* .sectionShadow:hover{
+    opacity:1;
+} */
+@font-face{
+    font-family: casino;
+    src:url(fonts/Casino3D.ttf)
+}
