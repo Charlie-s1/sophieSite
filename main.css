@@ -29,9 +29,6 @@ body{
     font-family: sans-serif;
     display:flex;
 }
-.navCont{
-    display:none;
-}
 #navBar nav > a, #mobMenu>a{
     margin:0 .5rem;
     font-size: 2rem;
@@ -43,9 +40,6 @@ body{
     border-bottom:5px solid black;
 }
 #closeNav{
-    display:none;
-}
-.navHome{
     display:none;
 }
 #mobMenu{display:none;}
@@ -68,27 +62,9 @@ body{
         overflow-wrap:normal;
         text-align: right;
     }
-    .navHome{
-        display:block;
-    }
     #selected{
         border-bottom: 5px solid black;
     }
-    /* #closeNav{
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 1rem;
-        right:1rem;
-        cursor: pointer;
-        height:3rem;
-        width:3rem;
-        border-radius:100%;
-        /* color:white; 
-        /* font-size: 2.5rem;
-        font-weight: 100; 
-    } */
     #mobMenu{
         background:#ffffff;
         position: fixed;
@@ -127,6 +103,9 @@ body{
         height:.3rem;
         border-radius: 20px;
         background: black;
+        top:0;
+        transition: .5s;
+        position: relative;
     }
 }
 @font-face{
