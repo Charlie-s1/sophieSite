@@ -1,0 +1,41 @@
+main{
+    max-width: 1000px;
+    margin:auto;
+}
+main h1{
+    text-align: center;
+    font-size: 4rem;
+}
+.projInfo p{
+    font-size: 1.1rem;
+    text-align: justify;
+    margin:1rem .5rem;
+}
+#imgScrollCont{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type:x mandatory;
+    height:66vh;
+}
+#imgScroll{
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:300%;
+    height:100%;
+    margin:auto;
+}
+.imgCont{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    scroll-snap-align: start;
+}
+.imgCont img{
+    max-height:90%;
+    max-width:90%;
+    /* margin:0 1rem 0 0; */
+}
