@@ -6,28 +6,32 @@ main h1{
     text-align: center;
     font-size: 4rem;
 }
+.projInfo{
+    margin:0 1rem;
+}
 .projInfo p{
     font-size: 1.1rem;
     text-align: justify;
     margin:1rem .5rem;
 }
 #imgScrollCont{
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow:auto;
     scroll-snap-type:x mandatory;
     height:66vh;
 }
 #imgScroll{
     position:relative;
     display:flex;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-evenly;
-    width:300%;
+    /* justify-content: space-evenly; */
+    /* width:300%; */
     height:100%;
     margin:auto;
 }
 .imgCont{
     display:flex;
+    flex: 0 0 auto;
     align-items: center;
     justify-content: center;
     width:100%;
