@@ -1,7 +1,7 @@
-main{
+/* main{
     max-width: 1000px;
     margin:auto;
-}
+} */
 main h1{
     text-align: center;
     font-size: 4rem;
@@ -12,34 +12,63 @@ main h1{
 .projInfo p{
     font-size: 1.1rem;
     text-align: justify;
-    margin:1rem .5rem;
 }
-#imgScrollCont{
-    overflow:auto;
-    scroll-snap-type:x mandatory;
-    height:66vh;
-}
-#imgScroll{
-    position:relative;
+#images{
     display:flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    /* justify-content: space-evenly; */
-    /* width:300%; */
-    height:100%;
-    margin:auto;
-}
-.imgCont{
-    display:flex;
-    flex: 0 0 auto;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+.imgCont{
     width:100%;
     height:100%;
-    scroll-snap-align: start;
 }
 .imgCont img{
-    max-height:90%;
-    max-width:90%;
-    /* margin:0 1rem 0 0; */
+    width:100%;
+    border-radius: 10px;
+}
+#images .projCont{
+    width:30%;
+    height:100%;
+    margin:1rem;
+    position: relative;
+    cursor: default;
+}
+
+#images .imageDesc{
+    opacity: 0;
+    transition: .25s;
+    position:absolute;
+    display:grid;
+    bottom:10px;
+    left:50%;
+    transform: translate(-50%);
+    width:95%;
+    background:#ffffff50;
+    backdrop-filter: blur(10px);
+    border-radius:10px;
+    border: 2px solid black;
+}
+.imageDesc aside{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.imageDesc aside p{
+    font-weight: 550;
+}
+.imageDesc h1{
+    font-size: 2rem;
+}
+.imageDesc p{
+    font-size: 1.25rem;
+    margin:.5rem;
+}
+#statement{
+    max-width:700px;
+    margin:auto;
+    text-align:justify;   
+}
+#statement p{
+    margin:1rem;
 }
