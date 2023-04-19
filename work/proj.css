@@ -48,6 +48,11 @@ main h1{
     backdrop-filter: blur(10px);
     border-radius:10px;
     border: 2px solid black;
+    max-height: 90%;
+}
+.imageDesc .mainDesc{
+    overflow: auto;
+    /* max-height: 50%; */
 }
 .imageDesc aside{
     width:100%;
