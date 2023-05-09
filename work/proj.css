@@ -39,6 +39,7 @@ main h1{
     opacity: 0;
     transition: .25s;
     position:absolute;
+    overflow: scroll;
     display:grid;
     bottom:10px;
     left:50%;
@@ -76,4 +77,9 @@ main h1{
 }
 #statement p{
     margin:1rem;
+}
+@media screen and (max-width:700px){
+    #images .projCont{
+        width:90%;
+    }
 }

@@ -23,7 +23,6 @@ section{
     position: relative;
     cursor:pointer;
     transition: .1s;
-    border-radius: 10px;
 }
 .fill{
     width:100%;
@@ -40,6 +39,9 @@ section{
     height:100%;
     object-fit: cover;
 }
+.card{
+    border-radius: 20px;
+}
 .cardHover{
     width:100%;
     height: 100%;
@@ -48,6 +50,7 @@ section{
 }
 .titleCont{
     position: absolute;
+    isolation: isolate;
     color:black;
     height:2rem;
     top:85%;
@@ -86,8 +89,4 @@ section{
         grid-template-columns: 1fr;
         margin:0;
     }
-}
-@font-face{
-    font-family: casino;
-    src:url(fonts/Casino3D.ttf)
 }

@@ -16,7 +16,7 @@ body{
     margin:1rem;
 }
 #title{
-    font-family: casino;
+    font-family: hyperreality;
     font-size: 5rem;
     text-decoration: none;
     color:black;
@@ -26,18 +26,18 @@ body{
     display:none;
 }
 #navCont{
-    font-family: sans-serif;
     display:flex;
 }
 #navBar nav > a, #mobMenu>a{
+    font-family: hyperreality;
     margin:0 .5rem;
     font-size: 2rem;
-    font-weight: 700;
     text-decoration: none;
     color:black;
 }
 #selected{
     border-bottom:5px solid black;
+    font-weight: 1000;
 }
 #closeNav{
     display:none;
@@ -109,6 +109,6 @@ body{
     }
 }
 @font-face{
-    font-family: casino;
-    src:url(fonts/Casino3D.ttf)
+    font-family: hyperreality;
+    src:url(fonts/Hypereality.ttf)
 }
