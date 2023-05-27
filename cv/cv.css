@@ -13,3 +13,8 @@ p{
     font-size: 1.25rem;
     margin:.25rem 0;
 }
+.itemWithLink{
+    display:flex;
+    align-items: center;
+    gap:.5rem;
+}

@@ -1,0 +1,13 @@
+main{
+    max-width:1000px;
+    margin:auto;
+}
+main p{
+    text-align: justify;
+    margin:1rem;
+}
+main img{
+    border-radius: 100%;
+    width:10rem;
+    height:10rem;
+}
