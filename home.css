@@ -7,6 +7,7 @@ main {
 }
 #mob {
   flex-direction: column;
+  height: fit-content;
   margin: 2rem 0;
   gap: 2rem;
 }
@@ -15,10 +16,18 @@ main {
   justify-content: space-around;
   gap: 3rem;
 }
+.imgCont {
+  object-fit: contain;
+  height: fit-content;
+}
+.imgCont img {
+  object-fit: contain;
+}
 #mobImg h1 {
   font-size: 4rem;
   writing-mode: vertical-lr;
   text-orientation: upright;
+  -webkit-text-orientation: upright;
   font-family: "Calibri", sans-serif;
   text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
