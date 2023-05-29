@@ -16,11 +16,11 @@ main {
   justify-content: space-around;
   gap: 3rem;
 }
-.imgCont {
+#mobImg .imgCont {
   object-fit: contain;
   height: fit-content;
 }
-.imgCont img {
+#mobImg .imgCont img {
   object-fit: contain;
 }
 #mobImg h1 {
@@ -28,13 +28,13 @@ main {
   writing-mode: vertical-lr;
   text-orientation: upright;
   -webkit-text-orientation: upright;
-  font-family: "Calibri", sans-serif;
   text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
 #mobTop {
   text-align: left;
   display: flex;
   align-items: center;
+  font-family: calibri;
 }
 #mobBottom {
   display: flex;
@@ -44,35 +44,42 @@ main {
   color: crimson;
   text-shadow: none !important;
   font-weight: 0;
+  font-family: calibri-light;
 }
 #mobImg .num {
   writing-mode: horizontal-tb;
 }
-.red {
-  color: crimson;
-}
-.cream {
-  color: #fffdd0;
-}
 .metal {
-  color: slategrey;
+  color: #7f7f7f;
+}
+#desktop2 {
+  flex-direction: column;
+  /* gap: 2rem; */
+}
+#desktop2 img {
+  object-fit: contain;
+  width: 100%;
+}
+#desktop2 footer {
+  padding: 1rem;
 }
 #desktop {
+  display: none;
   /* display: flex; */
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 90%;
+  height: 100%;
   gap: 2rem;
 }
 #imgBanner {
   display: flex;
   justify-content: space-between;
   max-width: 100%;
-  max-height: 75vh;
+  max-height: 90vh;
   margin: 0 2rem;
 }
-.imgCont {
+#desktop .imgCont {
   width: 20%;
   display: flex;
   align-items: center;
@@ -114,16 +121,26 @@ footer {
 footer p {
   text-align: center;
 }
-#he,
-#sh {
-  color: crimson;
+.he {
+  color: #c00000;
 }
-#li {
-  color: #fffdd0;
+.li {
+  color: #fff2cc;
 }
-#ve {
-  color: #e9cfcf;
+.sh {
+  color: #ff0000;
+}
+.ve {
+  color: #f8cbad;
 }
 .show {
   align-items: baseline !important;
+}
+@font-face {
+  font-family: calibri-light;
+  src: url(fonts/calibril.ttf);
+}
+@font-face {
+  font-family: calibri;
+  src: url(fonts/Calibri.ttf);
 }
