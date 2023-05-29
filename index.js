@@ -23,7 +23,6 @@ window.addEventListener("load",()=>{
             // e.target.querySelector(".cardHover").style.background="";
             e.target.querySelector(".titleCont").style.top="85%";
         });
-
     }
     
 });
