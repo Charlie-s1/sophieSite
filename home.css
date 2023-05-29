@@ -6,6 +6,7 @@ main {
   height: 99%;
 }
 #mob {
+  /* display: none; */
   flex-direction: column;
   height: fit-content;
   margin: 2rem 0;
@@ -13,8 +14,9 @@ main {
 }
 #mobImg {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   gap: 3rem;
+  /* max-width: 90%; */
 }
 #mobImg .imgCont {
   object-fit: contain;
@@ -24,7 +26,7 @@ main {
   object-fit: contain;
 }
 #mobImg h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   writing-mode: vertical-lr;
   text-orientation: upright;
   -webkit-text-orientation: upright;
@@ -40,7 +42,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  text-align: right;
+  text-align: left;
   color: crimson;
   text-shadow: none !important;
   font-weight: 0;
@@ -53,6 +55,7 @@ main {
   color: #7f7f7f;
 }
 #desktop2 {
+  display: none;
   flex-direction: column;
   /* gap: 2rem; */
 }
