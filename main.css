@@ -3,7 +3,7 @@
   margin: 0;
 }
 body {
-  font-family: sans-serif;
+  font-family: avenir-book;
 }
 .stopScroll {
   overflow: hidden;
@@ -16,7 +16,7 @@ body {
   margin: 1rem;
 }
 #title {
-  font-family: hyperreality;
+  font-family: cordia-bold;
   font-size: 3rem;
   text-decoration: none;
   color: black;
@@ -30,7 +30,7 @@ body {
 }
 #navBar nav > a,
 #mobMenu > a {
-  font-family: hyperreality;
+  /* font-family: apple-braille; */
   margin: 0 0.5rem;
   font-size: 1.25rem;
   text-decoration: none;
@@ -113,4 +113,16 @@ body {
 @font-face {
   font-family: hyperreality;
   src: url(fonts/Hypereality.ttf);
+}
+@font-face {
+  font-family: apple-braille;
+  src: url(fonts/apple-braille.ttf);
+}
+@font-face {
+  font-family: avenir-book;
+  src: url(fonts/AvenirBook.ttf);
+}
+@font-face {
+  font-family: cordia-bold;
+  src: url(fonts/CordiaBold.ttf);
 }

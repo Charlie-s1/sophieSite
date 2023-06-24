@@ -148,3 +148,15 @@ footer p {
   font-family: calibri;
   src: url(fonts/Calibri.ttf);
 }
+@font-face {
+  font-family: apple-braille;
+  src: url(fonts/apple-braille.ttf);
+}
+@font-face {
+  font-family: avenir-book;
+  src: url(fonts/AvenirBook.ttf);
+}
+@font-face {
+  font-family: cordia-bold;
+  src: url(fonts/CordiaBold.ttf);
+}
